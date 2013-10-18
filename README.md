@@ -44,3 +44,5 @@ $ret = $dbank->upload($uri, '/root/sdk/c.dat');
 
 1. 客户端(服务器)直接上传至 距自己最近速度最快的云存储服务器
 2. 上传成功后客户端进行后续业务操作
+
+![](http://zl.hwpan.com/u12134807/demo1.png)
