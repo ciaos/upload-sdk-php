@@ -174,8 +174,6 @@ class HuaweiDbankCloud
             $n = floor($crc32 / $file_size);
             $start = $crc32 - ($n * $file_size);
             $end = ($start + 1024*1024) > ($file_size - 1) ? ($file_size - 1) : ($start + 1024*1024);
-echo "crc string :  $crc32,  md5 = $file_md5, i = $i, n = $n\n";
-echo "$start - $end\n";
             $f = fopen($file, 'r');
             fseek($f, $start);
             $str2 = fread($f, $end - $start + 1);
